@@ -23,6 +23,8 @@ public class TestController {
 	@PostMapping("/register")
 	public ResponseEntity<?> registerUser(@RequestBody UserDetails userDetais)
 	{
+		
+		System.out.println("im checking if code is gone");
 		BaseResult result=new BaseResult();
 		try
 		{
